@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Pension</title>
+</head>
+
+<body>
+  
+        <nav class="menu-principale">
+          <ul>
+                <li class="logo"> <i class="fas fa-compass"></i><a  href=""></a></li>
+                <li  class="reste"><a href=""> Accueil</a></li>
+                <li class="déroulant reste"><a href=""> Prestations &ensp;</a>
+                    <ul class="sous">
+                        <li><a href="P-canine.html">Pension Canine</a></li>
+                        <li><a href="P-féline.html">Pension Feline</a></li>
+                        <li><a href="s-sup.html">Services Suplémentaires</a></li>
+                    </ul>
+                </li>
+                <li class="reste"><a href="">Nous Connaître</a></li>
+                <li class="reste"><a href="">Nos Actualités</a></li>
+            </ul>
+        </nav>
+          <main>
+        <h1>Pension</h1>
+    
+
+    <section class="connaitre">
+        <button onclick="maFonction()" class="b_connaitre">Nous connaitre</button>
+
+        <div id="maDIV" style="display:none;">
+        Ton grand père
+        </div>
+    </section>
+
+    <section class="actualite">
+        <button onclick="maFonction2()" class="b-actualite">Actualité</button>
+
+        <div id="Div2" style="display:none;">
+        Ta grand-mère
+        </div>
+
+    </section>
+</main>
+    <script>
+        function maFonction() {
+          var div = document.getElementById("maDIV");
+          if (div.style.display === "none") {
+            div.style.display = "block";
+          } else {
+            div.style.display = "none";
+          }
+        }
+
+        function maFonction2() {
+          var div = document.getElementById("Div2");
+          if (div.style.display === "none") {
+            div.style.display = "block";
+          } else {
+            div.style.display = "none";
+          }
+        }
+
+
+    </script>
+
+
+</body>
+</html>
